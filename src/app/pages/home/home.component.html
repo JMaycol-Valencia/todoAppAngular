@@ -20,7 +20,7 @@
         <li *ngFor="let tarea of lista(); index as i">
           <div class="view">
             <input class="toggle" type="checkbox"/>
-            <label>{{tarea}}</label>
+            <label>{{tarea.title}}</label>
             <button class="destroy" (click)="deleteTareas(i)"></button>
           </div>
           <input class="edit" value="Learn JavaScript" />
